@@ -9,7 +9,7 @@
     <style>
       body {
         background-size: cover;
-        background-position: cover;
+        background-position: center;
         background-repeat: no-repeat;
         color: black;
       }
@@ -26,8 +26,6 @@
         text-align: center;
         padding: 10px 0;
         width: 100%;
-        position: fixed;
-        bottom: 0;
       }
       .content {
         flex: 1;
@@ -36,6 +34,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding-top: 70px; /* Adjust padding for fixed navbar */
       }
       .stylish-text {
         font-size: 2rem;
@@ -54,16 +53,25 @@
         animation: spin 2s linear infinite;
       }
       .contact-form {
-        width: 25%;
+        width: 100%;
+        max-width: 500px; /* Adjust width for responsiveness */
         margin: 0 auto;
         background-color: rgba(0, 0, 0, 0.7);
-        padding: 70px 20px;
+        padding: 20px;
         border-radius: 10px;
-        margin-bottom: 100px;
+        margin-bottom: 50px; /* Adjust margin for spacing */
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
     </style>
   </head>
-  <body> 
+  <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -117,16 +125,15 @@
       </div>
     </nav>
     <div class="content">
-        <br>
-        <br>
-        <br>
-
+      <br>
+      <br>
+      <br>
       <h1>Contact Us</h1>
       <p>We'd love to hear from you! Reach out to us through any of the following channels:</p>
       <ul>
-        Phone: +234-803-643-0419<br>
-        Email: info@360distinctrealestate.com<br>
-        Address: B18, Platinum Mall, Ikota First Gate Bus-stop,<br>Lekki Expressway, Lagos, Nigeria.<br>
+        <li>Phone: +234-803-643-0419</li>
+        <li>Email: info@360distinctrealestate.com</li>
+        <li>Address: B18, Platinum Mall, Ikota First Gate Bus-stop, Lekki Expressway, Lagos, Nigeria.</li>
       </ul>
       <h2>Connect with Us on Social Media</h2>
       <ul>
