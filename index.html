@@ -9,16 +9,19 @@
       body {
         background-image: url('./assets/eko_view.jpeg');
         background-size: cover;
-        background-position: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        color: white; /* Adjust text color for visibility on the background */
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
       .navbar-brand img {
         width: 30px;
         height: 24px;
       }
       .offcanvas-body {
-        background-color: rgba(0, 0, 0, 0.8); /* Optional: Darken the offcanvas background for better readability */
+        background-color: rgba(0, 0, 0, 0.8);
       }
       footer {
         background-color: #222;
@@ -36,22 +39,24 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 20px;
       }
       .stylish-text {
         font-size: 2rem;
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         margin-top: 20px;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
         border-radius: 10px;
+        max-width: 80%;
       }
       .stylish-text img {
         margin-top: 50px;
-        width: 100px; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
-        opacity: 0.8; /* Adjust the opacity value (0 to 1) for transparency */
-        animation: spin 2s linear infinite; /* Add spinning animation */
+        width: 100px;
+        height: auto;
+        opacity: 0.8;
+        animation: spin 2s linear infinite;
       }
       @keyframes spin {
         from {
@@ -62,16 +67,17 @@
         }
       }
       .contact-form {
-        width: 25%; /* Set width to a fifth of the screen size */
-        margin: 0 auto; /* Center align the form */
-        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-        padding: 70px 20px;
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
         border-radius: 10px;
-        margin-bottom: 100px; /* Add margin to separate form from the footer */
+        margin-bottom: 100px;
       }
     </style>
   </head>
-  <body> 
+  <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -125,7 +131,6 @@
       </div>
     </nav>
     <div class="content">
-     <br><br>
       <div class="stylish-text">
         Transforming Dreams<br> into Enduring Legacies<br> for Generations<br>
         <img src="./assets/360_logo.jpeg" alt="Logo">
