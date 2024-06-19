@@ -52,7 +52,23 @@
         opacity: 0.8;
         animation: spin 2s linear infinite;
       }
-      
+      .contact-form {
+        width: 100%;
+        max-width: 500px; /* Adjust width for responsiveness */
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 50px; /* Adjust margin for spacing */
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     </style>
   </head>
   <body>
@@ -60,8 +76,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./assets/yellow_bg.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          360 Distinct Real Estate
-        </a>
+          360 Distinct Real Estate</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -111,108 +126,105 @@
     </nav>
 
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-12">
-          <h1>Apartment Details</h1>
+        <div class="row">
+          <div class="col-12">
+            <h1>Apartment Details</h1>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <!-- Terraces -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="./assets/Terraces.jpeg" class="card-img-top" alt="Terraces">
-            <div class="card-body">
-              <h5 class="card-title">Terraces</h5>
-              <p class="card-text">
-                <h1>Luxurious 4 Bedroom Terrace House</h1>
-                <p>Welcome to your dream home! This exquisite 4-bedroom terrace house offers unparalleled luxury and comfort. Here are the key features:</p>
-                <ul>
-                    <li><strong>All Rooms Ensuite</strong>: Each bedroom comes with its own private bathroom for your convenience and privacy.</li>
-                    <li><strong>Security Doors</strong>: High-quality security doors ensure your safety and peace of mind.</li>
-                    <li><strong>Water Treatment Plant</strong>: Enjoy clean and safe water with our state-of-the-art water treatment system.</li>
-                    <li><strong>24/7 Security</strong>: Our premises are monitored round-the-clock to keep you and your loved ones secure.</li>
-                    <li><strong>Fully-Equipped Gym</strong>: Stay fit and healthy with access to a modern, fully-equipped gym.</li>
-                    <li><strong>Green Area</strong>: Relax and unwind in beautifully landscaped green spaces.</li>
-                    <li><strong>Swimming Pool</strong>: Dive into luxury with a pristine swimming pool.</li>
-                    <li><strong>Central Generator</strong>: Never worry about power outages with a reliable central generator.</li>
-                    <li><strong>Fitted Kitchen</strong>: Cook in style with a kitchen that includes top-of-the-line appliances and fittings.</li>
-                    <li><strong>Spacious Wardrobes</strong>: Each bedroom features ample wardrobe space to meet all your storage needs.</li>
-                    <li><strong>Exquisitely Tiled Floors</strong>: Elegant and durable flooring that enhances the aesthetic appeal of your home.</li>
-                    <li><strong>Exotic Interior Wall Finishing</strong>: Experience luxury with finely crafted interior wall finishes that add a touch of class to every room.</li>
-                </ul>
-                <p>Make this luxurious 4-bedroom terrace house your new home and indulge in the finest living experience.</p>
-              </p>
+        <div class="row">
+          <!-- Terraces -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="./assets/Terraces.jpeg" class="card-img-top" alt="Terraces">
+              <div class="card-body">
+                <h5 class="card-title">Terraces</h5>
+                <p class="card-text">
+                  <h1>Luxurious 4 Bedroom Terrace House</h1>
+                  <p>Welcome to your dream home! This exquisite 4-bedroom terrace house offers unparalleled luxury and comfort. Here are the key features:</p>
+                  <ul>
+                      <li><strong>All Rooms Ensuite</strong>: Each bedroom comes with its own private bathroom for your convenience and privacy.</li>
+                      <li><strong>Security Doors</strong>: High-quality security doors ensure your safety and peace of mind.</li>
+                      <li><strong>Water Treatment Plant</strong>: Enjoy clean and safe water with our state-of-the-art water treatment system.</li>
+                      <li><strong>24/7 Security</strong>: Our premises are monitored round-the-clock to keep you and your loved ones secure.</li>
+                      <li><strong>Fully-Equipped Gym</strong>: Stay fit and healthy with access to a modern, fully-equipped gym.</li>
+                      <li><strong>Green Area</strong>: Relax and unwind in beautifully landscaped green spaces.</li>
+                      <li><strong>Swimming Pool</strong>: Dive into luxury with a pristine swimming pool.</li>
+                      <li><strong>Central Generator</strong>: Never worry about power outages with a reliable central generator.</li>
+                      <li><strong>Fitted Kitchen</strong>: Cook in style with a kitchen that includes top-of-the-line appliances and fittings.</li>
+                      <li><strong>Spacious Wardrobes</strong>: Each bedroom features ample wardrobe space to meet all your storage needs.</li>
+                      <li><strong>Exquisitely Tiled Floors</strong>: Elegant and durable flooring that enhances the aesthetic appeal of your home.</li>
+                      <li><strong>Exotic Interior Wall Finishing</strong>: Experience luxury with finely crafted interior wall finishes that add a touch of class to every room.</li>
+                  </ul>
+                  <p>Make this luxurious 4-bedroom terrace house your new home and indulge in the finest living experience.</p>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 Bedrooms -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="./assets/2bedroom.jpeg" class="card-img-top" alt="2 Bedrooms">
+              <div class="card-body">
+                <h5 class="card-title">2 Bedrooms</h5>
+                <p class="card-text">
+                  <h1>Luxurious 2 Bedroom Apartment</h1>
+                  <p>Experience modern living in our luxurious 2-bedroom apartments. Here are the key features:</p>
+                  <ul>
+                      <li><strong>All Rooms Ensuite</strong>: Each bedroom comes with its own private bathroom for your convenience and privacy.</li>
+                      <li><strong>Security Doors</strong>: High-quality security doors ensure your safety and peace of mind.</li>
+                      <li><strong>Water Treatment Plant</strong>: Enjoy clean and safe water with our state-of-the-art water treatment system.</li>
+                      <li><strong>24/7 Security</strong>: Our premises are monitored round-the-clock to keep you and your loved ones secure.</li>
+                      <li><strong>Fully-Equipped Gym</strong>: Stay fit and healthy with access to a modern, fully-equipped gym.</li>
+                      <li><strong>Green Area</strong>: Relax and unwind in beautifully landscaped green spaces.</li>
+                      <li><strong>Swimming Pool</strong>: Dive into luxury with a pristine swimming pool.</li>
+                      <li><strong>Central Generator</strong>: Never worry about power outages with a reliable central generator.</li>
+                      <li><strong>Fitted Kitchen</strong>: Cook in style with a kitchen that includes top-of-the-line appliances and fittings.</li>
+                      <li><strong>Spacious Wardrobes</strong>: Each bedroom features ample wardrobe space to meet all your storage needs.</li>
+                      <li><strong>Exquisitely Tiled Floors</strong>: Elegant and durable flooring that enhances the aesthetic appeal of your home.</li>
+                      <li><strong>Exotic Interior Wall Finishing</strong>: Experience luxury with finely crafted interior wall finishes that add a touch of class to every room.</li>
+                  </ul>
+                  <p>Make this luxurious 2-bedroom apartment your new home and indulge in the finest living experience.</p>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- 2 Bedrooms -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="./assets/2bedroom.jpeg" class="card-img-top" alt="2 Bedrooms">
-            <div class="card-body">
-              <h5 class="card-title">2 Bedrooms</h5>
-              <p class="card-text">
-                <h1>Luxurious 2 Bedroom Apartment</h1>
-                <p>Experience modern living in our luxurious 2-bedroom apartments. Here are the key features:</p>
-                <ul>
-                    <li><strong>All Rooms Ensuite</strong>: Each bedroom comes with its own private bathroom for your convenience and privacy.</li>
-                    <li><strong>Security Doors</strong>: High-quality security doors ensure your safety and peace of mind.</li>
-                    <li><strong>Water Treatment Plant</strong>: Enjoy clean and safe water with our state-of-the-art water treatment system.</li>
-                    <li><strong>24/7 Security</strong>: Our premises are monitored round-the-clock to keep you and your loved ones secure.</li>
-                    <li><strong>Fully-Equipped Gym</strong>: Stay fit and healthy with access to a modern, fully-equipped gym.</li>
-                    <li><strong>Green Area</strong>: Relax and unwind in beautifully landscaped green spaces.</li>
-                    <li><strong>Swimming Pool</strong>: Dive into luxury with a pristine swimming pool.</li>
-                    <li><strong>Central Generator</strong>: Never worry about power outages with a reliable central generator.</li>
-                    <li><strong>Fitted Kitchen</strong>: Cook in style with a kitchen that includes top-of-the-line appliances and fittings.</li>
-                    <li><strong>Spacious Wardrobes</strong>: Each bedroom features ample wardrobe space to meet all your storage needs.</li>
-                    <li><strong>Exquisitely Tiled Floors</strong>: Elegant and durable flooring that enhances the aesthetic appeal of your home.</li>
-                    <li><strong>Exotic Interior Wall Finishing</strong>: Experience luxury with finely crafted interior wall finishes that add a touch of class to every room.</li>
-                </ul>
-                <p>Make this luxurious 2-bedroom apartment your new home and indulge in the finest living experience.</p>
-              </p>
+        <div class="row">
+          <!-- Studio Apartments -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="./assets/studioapartments.jpeg" class="card-img-top" alt="Studio Apartments">
+              <div class="card-body">
+                <h5 class="card-title">Studio Apartment</h5>
+                <p class="card-text">
+                  <h1>Luxurious Studio Apartment</h1>
+                  <p>Our luxurious one room and sitting area apartments offer spacious and modern living. Here are the key features:</p>
+                  <ul>
+                      <li><strong>All Rooms Ensuite</strong>: Each bedroom comes with its own private bathroom for your convenience and privacy.</li>
+                      <li><strong>Security Doors</strong>: High-quality security doors ensure your safety and peace of mind.</li>
+                      <li><strong>Water Treatment Plant</strong>: Enjoy clean and safe water with our state-of-the-art water treatment system.</li>
+                      <li><strong>24/7 Security</strong>: Our premises are monitored round-the-clock to keep you and your loved ones secure.</li>
+                      <li><strong>Fully-Equipped Gym</strong>: Stay fit and healthy with access to a modern, fully-equipped gym.</li>
+                      <li><strong>Green Area</strong>: Relax and unwind in beautifully landscaped green spaces.</li>
+                      <li><strong>Swimming Pool</strong>: Dive into luxury with a pristine swimming pool.</li>
+                      <li><strong>Central Generator</strong>: Never worry about power outages with a reliable central generator.</li>
+                      <li><strong>Fitted Kitchen</strong>: Cook in style with a kitchen that includes top-of-the-line appliances and fittings.</li>
+                      <li><strong>Spacious Wardrobes</strong>: Each bedroom features ample wardrobe space to meet all your storage needs.</li>
+                      <li><strong>Exquisitely Tiled Floors</strong>: Elegant and durable flooring that enhances the aesthetic appeal of your home.</li>
+                      <li><strong>Exotic Interior Wall Finishing</strong>: Experience luxury with finely crafted interior wall finishes that add a touch of class to every room.</li>
+                  </ul>
+                  <p>Make this luxurious 3-bedroom apartment your new home and indulge in the finest living experience.</p>
+                </p>
+              </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <!-- Studio Apartments -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="./assets/studioapartments.jpeg" class="card-img-top" alt="Studio Apartments">
-            <div class="card-body">
-              <h5 class="card-title">Studio Apartment</h5>
-              <p class="card-text">
-                <h1>Luxurious Studio Apartment</h1>
-                <p>Our luxurious one room and sitting area apartments offer spacious and modern living. Here are the key features:</p>
-                <ul>
-                    <li><strong>All Rooms Ensuite</strong>: Each bedroom comes with its own private bathroom for your convenience and privacy.</li>
-                    <li><strong>Security Doors</strong>: High-quality security doors ensure your safety and peace of mind.</li>
-                    <li><strong>Water Treatment Plant</strong>: Enjoy clean and safe water with our state-of-the-art water treatment system.</li>
-                    <li><strong>24/7 Security</strong>: Our premises are monitored round-the-clock to keep you and your loved ones secure.</li>
-                    <li><strong>Fully-Equipped Gym</strong>: Stay fit and healthy with access to a modern, fully-equipped gym.</li>
-                    <li><strong>Green Area</strong>: Relax and unwind in beautifully landscaped green spaces.</li>
-                    <li><strong>Swimming Pool</strong>: Dive into luxury with a pristine swimming pool.</li>
-                    <li><strong>Central Generator</strong>: Never worry about power outages with a reliable central generator.</li>
-                    <li><strong>Fitted Kitchen</strong>: Cook in style with a kitchen that includes top-of-the-line appliances and fittings.</li>
-                    <li><strong>Spacious Wardrobes</strong>: Each bedroom features ample wardrobe space to meet all your storage needs.</li>
-                    <li><strong>Exquisitely Tiled Floors</strong>: Elegant and durable flooring that enhances the aesthetic appeal of your home.</li>
-                    <li><strong>Exotic Interior Wall Finishing</strong>: Experience luxury with finely crafted interior wall finishes that add a touch of class to every room.</li>
-                </ul>
-                <p>Make this luxurious 3-bedroom apartment your new home and indulge in the finest living experience.</p>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-          </div>
-        </div>
-      </div>
-    </div>
-
+    
     <footer>
-      &copy; 2023 360 Distinct Real Estate. All rights reserved.
+      &copy; 2024 360 Distinct Real Estate. All rights reserved.
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-QFzPQCkYqf13mPHkc9gfTbOynApPJlCOuYg32Al1RUPmZ5mM3Jm4DKEyg0zXM87K" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
