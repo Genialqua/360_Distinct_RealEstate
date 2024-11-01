@@ -11,7 +11,7 @@ const allowCors = fn => async (req, res) => {
         res.setHeader('Access-Control-Allow-Origin', origin);
         res.setHeader('Access-Control-Allow-Credentials', 'true');
     }
-    
+
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
     res.setHeader(
         'Access-Control-Allow-Headers',
@@ -26,4 +26,4 @@ const allowCors = fn => async (req, res) => {
     return await fn(req, res);
 };
 
-export default allowCors;
+module.exports = allowCors;

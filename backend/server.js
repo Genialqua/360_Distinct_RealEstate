@@ -1,13 +1,13 @@
 // server/server.js
 const express = require("express");
-import allowCors from './config/allowCors.js';
+const allowCors = require('./config/allowCors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require("dotenv");
 const cors = require("cors");
 const nodemailer = require('nodemailer');
 const connectDB = require("./config/db");
-import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 const path = require('path');
 
 dotenv.config();
