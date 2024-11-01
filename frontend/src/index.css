@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#hero {
+    background: url('./assets/2bedroom.jpeg') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 0;
+}
+
+#highlights .card {
+    border: none;
+    background: #f8f9fa;
+}
+
+#highlights .card-body {
+    padding: 20px;
+}
+
+#lead-magnet, #virtual-tour, #gallery, #contact {
+    padding: 60px 0;
+}
+
+#gallery img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+    color: #ddd;
+}
