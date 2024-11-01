@@ -16,12 +16,13 @@ connectDB();
 const app = express();
 app.use(cors({
     origin: ['https://www.360distinctrealestate.com', 'http://localhost:4000', 'http://localhost:3000'],
-    credentials: true, // Allow cookies and authentication headers
+    credentials: true, 
 }));
-// app.use(allowCors((req, res, next) => next()));
+
 app.use((req, res, next) => allowCors((req, res) => next())(req, res));
 app.use(bodyParser.json());
-app.use(express.json()); // Parse JSON bodies
+// Parse JSON bodies
+app.use(express.json()); 
 
 // Use routes
 const leadRoutes = require("./routes/leadRoutes");
