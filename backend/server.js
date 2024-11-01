@@ -14,6 +14,10 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.use(cors({
+    origin: ['https://www.360distinctrealestate.com', 'http://localhost:4000', 'http://localhost:3000'],
+    credentials: true, // Allow cookies and authentication headers
+}));
 // app.use(allowCors((req, res, next) => next()));
 app.use((req, res, next) => allowCors((req, res) => next())(req, res));
 app.use(bodyParser.json());
