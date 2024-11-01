@@ -31,7 +31,7 @@ const AlexAndBillEstate = () => {
 
     try {
       setIsLoading(true);
-      const response = await fetch("/api/brochure", {
+      const response = await fetch("https://www.360distinctrealestate.com/api/brochure", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -69,7 +69,7 @@ const AlexAndBillEstate = () => {
 
     try {
       setIsLoading(true);
-      const response = await fetch("/api/virtual-tour", {
+      const response = await fetch("https://www.360distinctrealestate.com/api/virtual-tour", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
