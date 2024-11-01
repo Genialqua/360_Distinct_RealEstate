@@ -1,18 +1,20 @@
 // server/server.js
 const express = require("express");
+import allowCors from './config/allowCors.js';
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require("dotenv");
 const cors = require("cors");
 const nodemailer = require('nodemailer');
 const connectDB = require("./config/db");
+import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 const path = require('path');
 
 dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(allowCors((req, res, next) => next()));
 app.use(bodyParser.json());
 app.use(express.json()); // Parse JSON bodies
 
@@ -105,6 +107,10 @@ app.post('/api/brochure', async (req, res) => {
       res.status(500).json({ error: 'Error processing brochure request.' });
     }
   });
+
+  // Error handling middleware
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5003;
 app.listen(PORT, () => {
