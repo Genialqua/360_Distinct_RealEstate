@@ -14,7 +14,8 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(allowCors((req, res, next) => next()));
+// app.use(allowCors((req, res, next) => next()));
+app.use((req, res, next) => allowCors((req, res) => next())(req, res));
 app.use(bodyParser.json());
 app.use(express.json()); // Parse JSON bodies
 
