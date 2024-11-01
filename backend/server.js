@@ -7,6 +7,7 @@ const nodemailer = require("nodemailer");
 const connectDB = require("./config/db");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const path = require("path");
+const allowCors = require("./config/allowCors");
 
 dotenv.config();
 connectDB();
@@ -14,14 +15,7 @@ connectDB();
 const app = express();
 
 // Configure CORS
-app.use(cors({
-    origin: [
-        "https://www.360distinctrealestate.com", // allow your Vercel site
-        "http://localhost:4000",
-        "http://localhost:3000"
-    ],
-    credentials: true,
-}));
+app.use(allowCors);
 
 // Middleware to parse JSON bodies
 app.use(express.json());
