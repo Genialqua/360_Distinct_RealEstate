@@ -18,14 +18,5 @@
         "src": "/(.*)",
         "dest": "backend/server.js"
       }
-    ],
-    "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "https://www.360distinctrealestate.com" },
-        { "key": "Access-Control-Allow-Credentials", "value": "true" }
-      ]
-    }
-  ]
+    ]
   }
