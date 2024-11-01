@@ -31,7 +31,7 @@ const AlexAndBillEstate = () => {
 
     try {
       setIsLoading(true);
-      const response = await fetch("https://360-distinct-real-estate-backend.vercel.app/api/brochure", {
+      const response = await fetch("/api/brochure", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -69,7 +69,7 @@ const AlexAndBillEstate = () => {
 
     try {
       setIsLoading(true);
-      const response = await fetch("https://360-distinct-real-estate-backend.vercel.app/api/virtual-tour", {
+      const response = await fetch("/api/virtual-tour", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
