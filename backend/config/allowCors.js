@@ -1,4 +1,4 @@
-const allowCors = fn => (req, res, next) => {
+const allowCors = fn => async (req, res, next) => {
     const allowedOrigins = [
         'https://www.360distinctrealestate.com',
         'http://localhost:4000',
@@ -20,9 +20,9 @@ const allowCors = fn => (req, res, next) => {
 
     if (req.method === 'OPTIONS') {
         res.status(200).end(); // End OPTIONS preflight requests here
-    } else {
-        fn(req, res, next); // Pass the `next` function correctly
-    }
+    } 
+    return await fn(req, res, next); // Pass the `next` function correctly
+    
 };
 
 module.exports = allowCors;
