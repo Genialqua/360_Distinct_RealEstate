@@ -12,7 +12,7 @@ const allowCors = fn => async (req, res) => {
         res.setHeader('Access-Control-Allow-Credentials', 'true');
     }
 
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH, FETCH');
     res.setHeader(
         'Access-Control-Allow-Headers',
         'Content-Type, Accept, Authorization, X-Requested-With'
