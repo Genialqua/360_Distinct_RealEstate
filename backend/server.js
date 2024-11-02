@@ -1,4 +1,6 @@
+const path = require("path");
 const express = require("express");
+const allowCors = require("./config/allowCors");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
@@ -6,16 +8,18 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const connectDB = require("./config/db");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
-const path = require("path");
-const allowCors = require("./config/allowCors");
 
 dotenv.config();
+
+// Start the server
+const PORT = process.env.PORT || 5000;
+
 connectDB();
 
 const app = express();
 
 // Configure CORS
-app.use(allowCors);
+app.use(allowCors((req, res, next) => next()));
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -116,8 +120,7 @@ app.post("/api/brochure", async (req, res) => {
 app.use(notFound);
 app.use(errorHandler);
 
-// Start the server
-const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
