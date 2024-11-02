@@ -19,7 +19,7 @@ connectDB();
 const app = express();
 
 // Configure CORS
-app.use(allowCors((req, res, next) => next()));
+app.use(allowCors);
 
 // Middleware to parse JSON bodies
 app.use(express.json());
