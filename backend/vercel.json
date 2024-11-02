@@ -12,7 +12,8 @@
         "dest": "server.js",
         "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
         "headers": {
-          "Access-Control-Allow-Origin": "https://360-distinct-real-estate-backend.vercel.app"
+          "Access-Control-Allow-Origin": "https://www.360distinctrealestate.com"
+          
         }
         
       }
