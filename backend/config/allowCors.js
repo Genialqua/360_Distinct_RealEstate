@@ -3,13 +3,18 @@ const allowCors = (fn) => async (req, res, next) => {
         'https://www.360distinctrealestate.com',
         'http://localhost:4000',
         'http://localhost:3000',
+        'https://360-distinct-real-estate-backend.vercel.app'
     ];
 
     const origin = req.headers.origin;
 
     if (allowedOrigins.includes(origin)) {
+        // Set the header dynamically to the request's origin
         res.setHeader('Access-Control-Allow-Origin', origin);
         res.setHeader('Access-Control-Allow-Credentials', 'true');
+    } else {
+        // Optional: Set '*' to allow all origins in development
+        // res.setHeader('Access-Control-Allow-Origin', '*');
     }
 
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
