@@ -1,8 +1,8 @@
-const allowCors = fn => async (req, res, next) => {
+const allowCors = (fn) => async (req, res, next) => {
     const allowedOrigins = [
         'https://www.360distinctrealestate.com',
         'http://localhost:4000',
-        'http://localhost:3000' // Add all required origins
+        'http://localhost:3000',
     ];
 
     const origin = req.headers.origin;
@@ -19,10 +19,16 @@ const allowCors = fn => async (req, res, next) => {
     );
 
     if (req.method === 'OPTIONS') {
-        res.status(200).end(); // End OPTIONS preflight requests here
-    } 
-    return await fn(req, res, next); // Pass the `next` function correctly
-    
+        return res.status(200).end(); // End OPTIONS preflight requests here
+    }
+
+    // Check if `fn` is a valid function before calling it
+    if (typeof fn === 'function') {
+        return await fn(req, res, next); // Pass the `next` function correctly
+    }
+
+    // If `fn` is not provided, simply call `next` to proceed with the middleware chain
+    next();
 };
 
 module.exports = allowCors;

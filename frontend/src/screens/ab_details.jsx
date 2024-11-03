@@ -39,7 +39,7 @@ const Apartments = () => {
       setError(null);
   
       try {
-        const response = await fetch("https://www.360distinctrealestate.com/api/bookings", {
+        const response = await fetch("/api/bookings", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
