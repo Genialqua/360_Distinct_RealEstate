@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -15,6 +15,28 @@ const Footer = () => {
         borderRadius: '5px',
         transition: 'background-color 0.3s ease', // Smooth transition for background color
     };
+
+    useEffect(() => {
+        const script1 = document.createElement("script");
+        script1.type = "text/javascript";
+        script1.innerHTML = `
+            _linkedin_partner_id = "7820937";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+        `;
+        document.head.appendChild(script1);
+
+        const script2 = document.createElement("script");
+        script2.type = "text/javascript";
+        script2.async = true;
+        script2.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        document.head.appendChild(script2);
+
+        return () => {
+            document.head.removeChild(script1);
+            document.head.removeChild(script2);
+        };
+    }, []);
 
     return (
         <footer style={{ backgroundColor: '#f8f9fa', padding: '20px 0' }}> {/* Background color added here */}
@@ -61,8 +83,14 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
+
+            {/* LinkedIn Insight Tag */}
+            <noscript>
+                <img height="1" width="1" style={{ display: 'none' }} alt="" src="https://px.ads.linkedin.com/collect/?pid=7820937&fmt=gif" />
+            </noscript>
         </footer>
     );
 };
 
 export default Footer;
+
