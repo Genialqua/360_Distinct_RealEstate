@@ -87,7 +87,7 @@ const Apartments = () => {
                 <h5 className="card-title">Terraces</h5>
                 <h5 className="card-title">Price: N200 Million</h5>
                 <h5 className="card-title">Units Available: 13</h5>
-                <h1>Luxurious 4 Bedroom Terrace House + BQ</h1>
+                <h1>Luxurious 4 Bedroom Terrace House</h1>
                 <p>
                 Welcome to the epitome of luxury living at Alex and Bill Gardens, 
                 where sophistication meets comfort in our expansive 4-bedroom with 4 
