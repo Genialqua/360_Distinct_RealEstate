@@ -39,6 +39,10 @@ const Header = () => {
                 <strong>Virtual Tour</strong>
               </Nav.Link>
 
+              <Nav.Link as={Link} to="/blog" className="mx-3">
+                <strong>Blog</strong>
+              </Nav.Link>
+
               <Nav.Link as={Link} to="/contactUs" className='mx-3'>
                 <strong>Contact Us</strong>
               </Nav.Link>

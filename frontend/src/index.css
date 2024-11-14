@@ -36,3 +36,51 @@ body {
     text-decoration: none;
     color: #ddd;
 }
+
+.blog-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .blog-list {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .blog-post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .blog-post h2 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+  }
+  
+  .blog-post p {
+    color: #555;
+  }
+  
+  .read-more {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  .blog-detail img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
