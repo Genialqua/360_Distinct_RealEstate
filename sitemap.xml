@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.360distinctrealestate.com/</loc>
+    <lastmod>2024-09-11</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://www.360distinctrealestate.com/contactUs</loc>
+    <lastmod>2024-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Completed Projects Pages -->
+  <url>
+    <loc>https://www.360distinctrealestate.com/completedProjects</loc>
+    <lastmod>2024-09-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.360distinctrealestate.com/alex-and-bill-estate</loc>
+    <lastmod>2024-09-09</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://www.360distinctrealestate.com/aboutUs</loc>
+    <lastmod>2024-09-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Alex and Bill Apartment Page -->
+  <url>
+    <loc>https://www.360distinctrealestate.com/AlexandBillApartments</loc>
+    <lastmod>2024-09-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Ongoing Projects Page -->
+  <url>
+    <loc>https://www.360distinctrealestate.com/ongoingProjects</loc>
+    <lastmod>2024-09-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://www.360distinctrealestate.com/blog</loc>
+    <lastmod>2024-09-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://www.360distinctrealestate.com/blog/:id</loc>
+    <lastmod>2024-09-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  
+</urlset>
