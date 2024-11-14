@@ -66,7 +66,7 @@ const Apartments = () => {
       <div className="container mt-5 pt-5">
         <div className="row d-flex justify-content-center align-items-center text-center" style={{ minHeight: '1vh' }}>
           <div className="col-12">
-          <h1>Alex and Bill Court</h1>
+          <h1>Alex and Bill Residences</h1>
             <h2>Apartment Details</h2>
             <p>With swimming pool and smart apartments</p>
           </div>
@@ -89,7 +89,7 @@ const Apartments = () => {
                 <h5 className="card-title">Units Available: 13</h5>
                 <h1>Luxurious 4 Bedroom Terrace House</h1>
                 <p>
-                Welcome to the epitome of luxury living at Alex and Bill Gardens, 
+                Welcome to the epitome of luxury living at Alex and Bill Residences, 
                 where sophistication meets comfort in our expansive 4-bedroom with 4 
                 terraces and a BQ. Thoughtfully designed to blend elegance with modern 
                 conveniences, this spacious apartment offers an ideal living space for 
