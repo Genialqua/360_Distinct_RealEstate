@@ -1,4 +1,4 @@
-import Real2025 from '../assets/real2025b.jpeg';
+import Real2025 from '../assets/Seyi2025.jpeg';
 import TwobedInterior from '../assets/interior3.jpeg';
 import OneBedInterior from '../assets/interior2.jpeg';
 
@@ -136,16 +136,16 @@ const blogPosts = [
     category: "Investment",
     image: Real2025,
   },
-  {
-    id: 2,
-    title: "Property Market Trends 2024",
-    summary: "An insight into the latest real estate market trends and forecasts.",
-    content: "Full article content goes here...",
-    author: "Jane Smith",
-    date: "September 20, 2024",
-    category: "Market Trends",
-    image: TwobedInterior,
-  },
+//   {
+//     id: 2,
+//     title: "Property Market Trends 2024",
+//     summary: "An insight into the latest real estate market trends and forecasts.",
+//     content: "Full article content goes here...",
+//     author: "Jane Smith",
+//     date: "September 20, 2024",
+//     category: "Market Trends",
+//     image: TwobedInterior,
+//   },
   // Add more blog posts as needed
 ];
 
