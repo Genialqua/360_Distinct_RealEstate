@@ -12,15 +12,18 @@ const BlogDetail = () => {
   }
 
   return (
-    <div className="blog-detail">
-      <h1>{post.title}</h1>
-      <p><em>By {post.author} on {post.date} | Category: {post.category}</em></p>
-      <img 
-      src={post.image} 
-      alt={post.title} 
-      style={{ width: '200px', height: 'auto' }}
-      />
-      <p>{post.content}</p>
+    <div className="blog-detail-page">
+      <div className="blog-detail">
+        <h1>{post.title}</h1>
+        <p><em>By {post.author} on {post.date} | Category: {post.category}</em></p>
+        <img 
+          src={post.image} 
+          alt={post.title} 
+          style={{ width: '200px', height: 'auto' }}
+        />
+        {/* Use dangerouslySetInnerHTML to render HTML content */}
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      </div>
     </div>
   );
 };

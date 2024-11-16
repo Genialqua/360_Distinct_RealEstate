@@ -43,7 +43,7 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col className="text-center py-3">
-                        <p>Contact us: +234 903 237 3430<br/>   360 Distinct Real Estate &copy; {currentYear}</p>
+                        <p>Contact us: +234 903 237 3430<br/>   360 Distinct Real Estate Ltd &copy; {currentYear}</p>
 
                         <div className="social-links">
                             {[
