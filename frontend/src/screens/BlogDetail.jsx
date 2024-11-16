@@ -19,9 +19,8 @@ const BlogDetail = () => {
         <img 
           src={post.image} 
           alt={post.title} 
-          style={{ width: '200px', height: 'auto' }}
+          className="blog-image"
         />
-        {/* Use dangerouslySetInnerHTML to render HTML content */}
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
     </div>
