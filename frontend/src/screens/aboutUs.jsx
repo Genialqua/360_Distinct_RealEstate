@@ -16,7 +16,7 @@ const RealEstateInfo = () => {
           <div className="col-12">
             <h1>About Us</h1>
             <p><strong>Who We Are</strong><br />
-              360 Distinct Real Estate is a leading property development and management 
+              360 Distinct Real Estate Ltd is a leading property development and management 
               company dedicated to transforming dreams 
               into enduring legacies. Founded with the vision of providing top-notch real estate solutions, 
               we have established ourselves as a trusted name in the industry. Our commitment to excellence, 

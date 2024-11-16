@@ -96,7 +96,7 @@ const AlexAndBillEstate = () => {
       {/* Hero Section */}
       <section id="hero" className="text-center text-light bg-dark py-5">
         <div className="container">
-          <h1 className="display-4">Discover and enjoy Luxury Living at Alex and Bill Estate</h1>
+          <h1 className="display-4">Discover and enjoy Luxury Living at Alex and Bill Residences</h1>
           <p className="lead">
             Premium 21-unit apartments offering elegant designs, top-tier amenities, and an unbeatable location in the heart of Lagos.
           </p>
@@ -112,13 +112,13 @@ const AlexAndBillEstate = () => {
       {/* Property Highlights Section */}
       <section id="highlights" className="py-5">
         <div className="container">
-          <h2 className="text-center">Why Choose Alex and Bill Estate?</h2>
+          <h2 className="text-center">Why Choose Alex and Bill Residences?</h2>
           <div className="row mt-4">
             {[
               {
                 title: "Prime Location",
                 description:
-                  "Located around Chevron area in Eti-Osa local government area, Lagos, Alex and Bill Estate offers access to top spots in the city.",
+                  "Located around the Chevron area in Eti-Osa local government area, Lagos, Alex and Bill Residences offers access to top spots in the city.",
               },
               {
                 title: "Luxury Apartments",
@@ -149,7 +149,7 @@ const AlexAndBillEstate = () => {
         <div className="container">
           <h2 className="text-center">Get Your Exclusive Brochure</h2>
           <p className="text-center">
-            Complete the form below to receive a detailed brochure including floor plans, pricing, and investment opportunities in Alex and Bill Garden.
+            Complete the form below to receive a detailed brochure including floor plans, pricing, and investment opportunities in Alex and Bill Residences.
           </p>
           <div className="d-flex justify-content-center">
             <form className="mt-4" onSubmit={handleBrochureFormSubmit}>
@@ -174,9 +174,9 @@ const AlexAndBillEstate = () => {
       {/* Virtual Tour Invitation */}
       <section id="virtual-tour" className="py-5">
         <div className="container">
-          <h2 className="text-center">Take a Virtual Tour of Alex and Bill Estate</h2>
+          <h2 className="text-center">Take a Virtual Tour of Alex and Bill Residences</h2>
           <p className="text-center">
-            Book a virtual tour and explore Alex and Bill Estate from the comfort of your home.
+            Book a virtual tour and explore Alex and Bill Residences from the comfort of your home.
           </p>
           <div className="d-flex justify-content-center">
             <form className="mt-4" onSubmit={handleTourFormSubmit}>
@@ -201,7 +201,7 @@ const AlexAndBillEstate = () => {
       {/* Gallery Section */}
       <section id="gallery" className="bg-light py-5">
         <div className="container">
-          <h2 className="text-center">Explore Alex and Bill Estate</h2>
+          <h2 className="text-center">Explore Alex and Bill Residences</h2>
           <div className="row mt-4">
             {[Alex1, Alex2, Alex3, Alex4, Alex5, Alex6].map((img, index) => (
               <div className="col-md-4" key={index}>
@@ -228,7 +228,7 @@ const AlexAndBillEstate = () => {
                 frameBorder="0"
                 style={{ border: 0 }}
                 allowFullScreen
-                title="Alex and Bill Estate Location"
+                title="Alex and Bill Residences Location"
               ></iframe>
             </div>
           </div>
